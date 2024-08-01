@@ -1,0 +1,50 @@
+$dark: #111111
+$white: #ffffff
+$hyperlink: #7091ff
+@font-face
+    font-family: 'Akkurat Mono'
+    src: url('./Akkurat-Mono.otf') format('opentype')
+    font-weight: 400
+    font-style: normal
+    font-optical-sizing: auto
+
+.akkurat
+    font-family: "Akkurat Mono", monospace
+
+.text-dark
+    color: $dark
+
+.product-img
+    border-radius: 0.2rem
+    filter: grayscale(100%)
+    transition: 0.5s
+
+.product-box__info
+    margin: 1rem 0 0 0
+
+.header__martinleib
+    text-decoration: none
+
+.fs-7
+    font-size: .7rem
+    color: #8e8e8e
+// footer
+//     filter: grayscale(100%)
+
+.kit-referral
+    color: $hyperlink !important
+    text-decoration: none !important
+
+.aside-container
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    width: 240px
+    height: 100%
+    background-color: $dark
+
+.aside-link
+    transition: 0.2s
+    &:hover
+        color: $hyperlink !important
