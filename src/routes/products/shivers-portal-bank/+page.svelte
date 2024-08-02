@@ -20,7 +20,7 @@
 		<div class="product-box__info text-center">
 			<h1 class="m-0 p-0">{kit[0].name}</h1>
 			<p class="m-0 p-0 product-box__price fs-3">${kit[0].price}</p>
-			<p class="mt-5p-0 product-box__info fs-5">it includes:</p>
+			<p class="p-0 product-box__info fs-5">it includes:</p>
 			<ul class="list-unstyled">
 				<li>25 original presets for <a href="https://output.com/products/portal" target="_blank">Portal</a> created by producer Martin Leib</li>
 			</ul>

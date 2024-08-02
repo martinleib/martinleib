@@ -20,7 +20,7 @@
 		<div class="product-box__info text-center">
 			<h1 class="m-0 p-0">{kit[0].name}</h1>
 			<p class="m-0 p-0 product-box__price fs-3">${kit[0].price}</p>
-			<p class="mt-5p-0 product-box__info fs-5">it includes:</p>
+			<p class="p-0 product-box__info fs-5">it includes:</p>
 			<ul class="list-unstyled">
 				<li>90 one-shot samples best suited for <em>Ambient</em> and <em>Virtual</em> beats</li>
 			</ul>
