@@ -8,6 +8,7 @@
     import shivers from "../../img/shivers_portal_bank.png";
     import enigma from "../../img/enigma_one_shot_kit.jpg";
     import experimental from "../../img/experimental_bundle.jpg";
+    import hihatizer from "../../img/hihatizer.jpeg"
 
     let currentUser = new User(
         "Martin Leib",
@@ -34,6 +35,12 @@
             image: experimental,
             download: "https://drive.google.com",
             author: "Martin Leib"
+        },
+        {
+            kitname: "Hihatizer",
+            image: hihatizer,
+            download: "https://drive.google.com",
+            author: "Martin Leib"
         }]
     )
 </script>
@@ -49,7 +56,7 @@
 
     <div class="row text-uppercase akkurat mt-5">
         {#each currentUser.kits as kit (kit)}
-            <div class="col-12 col-md-3 pb-3 pb-md-0 product-box">
+            <div class="col-12 col-md-3 pb-3 pb-md-0 product-box mb-0 mb-sm-3 mb-lg-5 pb-3">
                     <img
                         src={kit.image}
                         alt={kit.kitname}
