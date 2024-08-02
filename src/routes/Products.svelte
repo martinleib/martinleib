@@ -16,7 +16,7 @@
     <div class="row">
         {#each kits as kit (kit.name)}
         <div class="col-12 col-md-3 pb-3 pb-md-0 product-box">
-            <a href={kit.route} target="_blank" class="kit-referral">
+            <a href={kit.route} class="kit-referral">
                 <img src={kit.img} alt={kit.name} class="img-fluid product-img" />
                 <div class="product-box__info text-center">
                     <p class="m-0 p-0">{kit.name}</p>
