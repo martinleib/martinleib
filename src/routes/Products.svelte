@@ -7,7 +7,6 @@
     import { onMount } from 'svelte';
 
     let kits = [];
-    let clickedButton = "";
     let selectedCategory = "all";
 
     const allProducts = [
@@ -46,17 +45,58 @@
     ];
 
     const handleProductsByCategory = (category) => {
-        clickedButton = document.querySelector(`#btn-category__${category}`)
         if (selectedCategory === category) {
             selectedCategory = "all";
             kits = allProducts;
-            clickedButton.classList.remove("active");
+            removeActiveClass(category);
         } else {
             selectedCategory = category;
             kits = category === "all" ? allProducts : allProducts.filter((kit) => kit.category === category);
-            clickedButton.classList.add("active");
+            handleActiveClass(category);
         } 
     };
+
+    const handleActiveClass = (category) => {
+        const drumkitButton = document.querySelector("#btn-category__drumkit");
+        const portalButton = document.querySelector("#btn-category__portal");
+        const oneshotButton = document.querySelector("#btn-category__oneshot");
+
+        switch (category) {
+            case "drumkit":
+                drumkitButton.classList.add("active");
+                portalButton.classList.remove("active");
+                oneshotButton.classList.remove("active");
+                break;
+            case "portal":
+                portalButton.classList.add("active");
+                drumkitButton.classList.remove("active");
+                oneshotButton.classList.remove("active");
+                break;
+            case "oneshot":
+                oneshotButton.classList.add("active");
+                drumkitButton.classList.remove("active");
+                portalButton.classList.remove("active");
+                break;
+        }        
+    }
+
+    const removeActiveClass = (category) => {
+        const drumkitButton = document.querySelector("#btn-category__drumkit");
+        const portalButton = document.querySelector("#btn-category__portal");
+        const oneshotButton = document.querySelector("#btn-category__oneshot");
+
+        switch (category) {
+            case "drumkit":
+                drumkitButton.classList.remove("active");
+                break;
+            case "portal":
+                portalButton.classList.remove("active");
+                break;
+            case "oneshot":
+                oneshotButton.classList.remove("active");
+                break;
+        }        
+    }
 
     onMount(() => {
         handleProductsByCategory("all");
@@ -65,9 +105,9 @@
 
 <main class="pt-5 pb-5 container text-center">
     <div class="text-start mb-3">
-        <button class="btn btn-primary" id="btn-category__drumkit" on:click={() => handleProductsByCategory("drumkit")}>Drum Kits</button>
-        <button class="btn btn-primary" id="btn-category__portal" on:click={() => handleProductsByCategory("portal")}>Portal Banks</button>
-        <button class="btn btn-primary" id="btn-category__oneshot" on:click={() => handleProductsByCategory("oneshot")}>One-shot Kits</button>
+        <button class="btn btn-dark" id="btn-category__drumkit" on:click={() => handleProductsByCategory("drumkit")}>Drum Kits</button>
+        <button class="btn btn-dark" id="btn-category__portal" on:click={() => handleProductsByCategory("portal")}>Portal Banks</button>
+        <button class="btn btn-dark" id="btn-category__oneshot" on:click={() => handleProductsByCategory("oneshot")}>One-shot Kits</button>
     </div>
     <hr>
     <div class="row text-uppercase akkurat">
