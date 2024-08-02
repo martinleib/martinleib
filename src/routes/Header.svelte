@@ -39,10 +39,10 @@
                     <a href="/" class="nav-link text-white aside-link">Main</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/login" class="nav-link text-white aside-link">Your downloads</a>
+                    <a href="/login/" class="nav-link text-white aside-link">Your downloads</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/contact" class="nav-link text-white aside-link">Contact</a>
+                    <a href="/contact/" class="nav-link text-white aside-link">Contact</a>
                 </li>
             </ul>
         </nav>
