@@ -1,5 +1,7 @@
 ### hola, me llamo Martin 🙌
-soy un productor músical, compositor y desarrollador web radicado en la costa sur de Uruguay
+soy un productor músical, compositor y desarrollador web radicado en la costa este de Uruguay
+
+podés mandarme un mail a: m@martin.al
 
 <p align="left">
   <a href="https://skillicons.dev">
