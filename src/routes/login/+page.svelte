@@ -1,3 +1,9 @@
+<svelte:head>
+	<title>Login | Martin Leib</title>
+	<meta name="description" content="Login page" />
+    <meta name="robots" content="noindex, nofollow" />
+</svelte:head>
+
 <form action="#" method="post" class="container mt-5" on:submit|preventDefault>
     <div class="mb-3">
         <label for="emailInput" class="form-label">Email address</label>

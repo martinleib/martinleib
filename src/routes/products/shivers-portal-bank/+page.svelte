@@ -6,7 +6,7 @@
 
 <svelte:head>
 	<title>{kit[0].name} | Martin Leib</title>
-	<meta name="description" content="About this app" />
+	<meta name="description" content="{kit[0].name} by Martin Leib" />
 </svelte:head>
 
 <div class="row pt-5 pb-5">
