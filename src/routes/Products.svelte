@@ -69,7 +69,7 @@
         const drumkitButton = document.querySelector("#btn-category__drumkit");
         const portalButton = document.querySelector("#btn-category__portal");
         const oneshotButton = document.querySelector("#btn-category__oneshot");
-        const pluginButton = document.querySelector("#btn-category__oneshot");
+        const pluginButton = document.querySelector("#btn-category__plugin");
 
         switch (category) {
             case "drumkit":
@@ -128,9 +128,9 @@
 <main class="pt-5 pb-5 container text-center">
     <div class="text-start mb-3">
         <button class="btn btn-dark mb-1 mb-sm-0" id="btn-category__drumkit" on:click={() => handleProductsByCategory("drumkit")}>Drum Kits</button>
-        <button class="btn btn-dark mb-1" id="btn-category__portal" on:click={() => handleProductsByCategory("portal")}>Portal Banks</button>
-        <button class="btn btn-dark mb-1" id="btn-category__oneshot" on:click={() => handleProductsByCategory("oneshot")}>One-shot Kits</button>
-        <button class="btn btn-dark mb-1" id="btn-category__plugin" on:click={() => handleProductsByCategory("plugin")}>Plugins</button>
+        <button class="btn btn-dark mb-1 mb-sm-0" id="btn-category__portal" on:click={() => handleProductsByCategory("portal")}>Portal Banks</button>
+        <button class="btn btn-dark mb-1 mb-sm-0" id="btn-category__oneshot" on:click={() => handleProductsByCategory("oneshot")}>One-shot Kits</button>
+        <button class="btn btn-dark mb-1 mb-sm-0" id="btn-category__plugin" on:click={() => handleProductsByCategory("plugin")}>Plugins</button>
     </div>
     <hr>
     <div class="row text-uppercase akkurat">

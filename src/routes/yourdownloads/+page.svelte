@@ -16,31 +16,26 @@
             kitname: "V1 Kit",
             image: v1kit,
             download: "https://drive.google.com",
-            author: "Martin Leib"
         },
         {
             kitname: "Shivers Portal Bank",
             image: shivers,
             download: "https://drive.google.com",
-            author: "Martin Leib"
         },
         {
             kitname: "Enigma One Shot Kit",
             image: enigma,
             download: "https://drive.google.com",
-            author: "Martin Leib"
         },
         {
             kitname: "Experimental Bundle",
             image: experimental,
             download: "https://drive.google.com",
-            author: "Martin Leib"
         },
         {
             kitname: "Hihatizer",
             image: hihatizer,
             download: "https://drive.google.com",
-            author: "Martin Leib"
         }]
     )
 </script>
@@ -64,7 +59,7 @@
                     />
                     <div class="product-box__info text-center">
                         <p class="m-0 p-0">{kit.kitname}</p>
-                        <p class="m-0 p-0 fs-7">{kit.author}</p>
+                        <p class="m-0 p-0 fs-7">MARTIN LEIB</p>
                         <a href={kit.download} class="kit-referral btn btn-outline-secondary text-dark mt-2"><Icon icon="bxs:download" /> Download</a>
                     </div>
                 </div>
